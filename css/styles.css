@@ -1,0 +1,170 @@
+/* STYLE PRESETS DO NOT ALTER THIS SECTION */
+h1, h2, h3, h4, h5, h6 {
+    margin-top:10px;
+    margin: center;
+}
+
+p {
+    font-size:16px;
+}
+
+body{
+  opacity: 1;
+  background-image: url("../img/sunny.jpg");
+  background-size: 100% 100%;
+  background-color: lightblue;
+}
+
+/* This makes the images round, lower makes img bigger */
+.pop{
+  box-shadow:5px 7px 5px #000;/*gives cards sense of depth*/ */
+}
+
+.rounded{
+  border-radius: 30%;
+  box-shadow:5px 7px 5px #000;/*gives cards sense of depth*/
+}
+
+.rounded15{
+  border-radius: 15%;
+  box-shadow:5px 7px 5px #000;/*gives cards sense of depth*/
+
+}
+
+.logoRounded{
+  border-radius: 50%;
+}
+
+.navbar-section{
+  opacity: .95;
+  background-color: lightgrey;
+}
+
+.adoption-section{
+  opacity: .90;
+  background-color: lightgrey;
+}
+
+
+.footer-section{
+  background-color: #000000;
+  color: white;  /*THis changes text color*/
+}
+
+ .rowMarginTop{
+   margin-top: 15px;
+ }
+
+/* .navbar-brand
+{
+  background-image: url("../img/petstore_logo.png") ;
+} */
+
+.marginNav{
+  margin-left: 10px;
+}
+
+.logoContact{
+  margin-left:5px;
+  font-size: 14px;
+}
+
+.logo{
+  margin-left: 10px;
+  width: 60px;
+}
+
+/* This was copied from fonts.google.com */
+  .logo2{
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Allerta Stencil', sans-serif; /*This is a font from google, imported in html*/
+    font-size: 24px;
+      text-shadow: 0px 0px 2px #ffffff , 0px 0px 2px #ffffff, 0px 0px 2px #ffffff;
+    /* color: black; */
+  }
+
+/* This is picture for the jumbotron, include class of here to jumbotron */
+.hero {
+    height:300px;
+    background-image: url("../img/vernal-falls-stairs.jpg" );
+    background-size: cover;
+    background-position:center center ;   /* This also changes size of centerimage displayed*/
+    color: white;
+    margin-top:80px;
+}
+
+
+
+.hero-text{
+  font-family: 'Allerta Stencil', sans-serif; /*This is a font from google, imported in html*/
+  /* font-size: 30px; */
+  color: #000000;
+  text-shadow: 0px 0px 6px #ffffff , 0px 0px 6px #ffffff, 0px 0px 6px #ffffff;}
+.title-font{
+  font-family: 'Allerta Stencil', sans-serif; /*This is a font from google, imported in html*/
+  color: #000000;
+  text-shadow: 0px 0px 6px #ffffff , 0px 0px 6px #ffffff, 0px 0px 6px #ffffff;
+}
+
+
+ .card{
+  /*  width: calc(90%);/* width of cardleaves some space in between*/
+    /* height:350px; */
+    opacity: 1 !important;
+    background-color: #ffffff;
+    /* margin: calc(10%/6);  /*every card has a left and right margin ex. 3cards eqauls 6*/
+    box-shadow:10px 10px 10px #000;/*gives cards sense of depth*/
+    /* padding: 35px; /* this pads card context fom outer box*/ */
+}
+
+/*
+.card img{
+    height: 180px;
+    display: block;
+    /* border-radius: 70%; */
+} */
+
+
+
+
+
+.pull-left {
+    float: left;
+}
+
+/*this class pulls everything to the right*/
+.pull-right {
+    float: right;
+}
+
+.centered{
+    margin: 0 auto;
+    /*auto makes margins on left and right even*/
+
+}
+
+.test{
+  margin: center;
+}
+
+/* .text-centered{
+    text-align: center;
+} */
+.fab, .far {
+    font-size:30px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+/* PLACE YOUR CUSTOM CODE HERE */
+
+@media screen and (max-width:500px){
+/*
+  [class*="col-"] {
+    width: 100%;
+  } */
+
+  /* .right-side {
+    text-align: center;
+  } */
+}
