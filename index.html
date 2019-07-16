@@ -3,234 +3,363 @@
 <!--  -->
 <!-- https://www.sandbarsolar.com/ -->
 <!-- test -->
+<!--Origianl Template can be found here https://www.w3schools.com/w3css/tryw3css_templates_startup.htm#home -->
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Yosemite Travel Guide.</title>
-    <!-- link google fonts here -->
-	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet"> <!--stencil font-->
+  <html>
+  <title>Yosemite Travel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
 
-    <!-- link all the css here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
 
-  <nav class="navbar navbar-default navbar-section navbar-fixed-top" >  <!--navbar-fixed-top keeps navbar floating up top-->
-	<div class="container-fluid">
-		<div class="row hero-text logoContact">
-			<i class="fas fa-phone"></i><span><a href="tel:5599420358">(559)942-0358</a></span><i class="fas fa-envelope marginNav"></i><span><a href="mailto:kevi123321@gmail.com">kevi123321@gmail.com</a></span>
-		</div>
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- <a class="navbar-brand" href="#">Brand</a> -->
-			<a href="index.html"><img class="logo pull-left logoRounded" src="img/lake.jpg" alt="Yosemite travel Logo"></a>
-			<span class="logo2">Yosemite Travel</span>  <!--span is for an inline element-->
+
+  <body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+				<!-- <a href="index.html"><img class="logo pull-left logoRounded" src="img/lake.jpg" alt="Yosemite travel Logo"></a> -->
+      <a href="#home" ><img class="logo pull-left logoRounded" src="img/lake.jpg" alt="Yosemite travel Logo"></a>
+			<span class="logo2">Yosemite Travel</span>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+        <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Travel Yosemite Lorem small</span><br>  <!--Appears only in large screen-->
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br> <!--Appears only in medium and small screens-->
+      <span class="w3-large">Experience what Yosemite has to offer you.</span>
+      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more about us</a></p>
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+			i
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center">ABOUT THE COMPANY</h3>
+    <p class="w3-center w3-large">Key features of our company</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Experience</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Passion</p>
+        <p>We are pasionate about what we do and are happy to share this with you. </p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Safety</p>
+        <p>Safety is our number 1 priority. Collectively our team is experienced in the area. We are certified in CPR and Wilderness First aid. Whether Drivin </p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Support</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Promo Section - "We know design" -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>We know design.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+        <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">THE TEAM</h3>
+    <p class="w3-center w3-large">The ones who runs this company</p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="img/college_picsmall.jpg" alt="Kevin" style="width:100%">
+          <div class="w3-container">
+            <h3>Kevin Hinojosa</h3>
+            <p class="w3-opacity">Local Yosemite Guide</p>
+            <p>Hello, my name is Kevin. I will be your lead guide on our trek to Yosemite Valley. I have over 15 years of living locally in the valley. </p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact Kevin</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>Karina Perez</h3>
+            <p class="w3-opacity">Itenerary Expert</p>
+            <p>Hello my name is Karina Perez. With many years experience in the central valley, I have put together the best Itenerary possinble to include spectactular spots and best hikes to make this the most awesome trip possible.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact Karina</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Alex Rodriguez</h3>
+            <p class="w3-opacity">Driver</p>
+            <p>Hello my name is Alex. I will be your main driver to our destination. I am an excellent driver with class C and class B commercial driver license. I will ensure we have the best comfortable drive in all weather conditions.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/img/chikis.jpg" alt="Chikis" style="width:100%">
+          <div class="w3-container">
+            <h3>Chikis Hinojosa</h3>
+            <p class="w3-opacity">Cuddle Expert</p>
+            <p>Chikis is my name, being addorable is my game. I will help lead the way and wag my tail along the way.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Promo Section "Statistics" -->
+  <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">14+</span>
+      <br>Scheduled hikes
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">55+</span>
+      <br>Hikes Done
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">89+</span>
+      <br>Happy Clients
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">150+</span>
+      <br>Combined years experience
+    </div>
+  </div>
+
+  <!-- Work Section -->
+  <div class="w3-container" style="padding:128px 16px" id="work">
+    <h3 class="w3-center">OUR WORK</h3>
+    <p class="w3-center w3-large">What we've done for people</p>
+
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-col l3 m6">
+        <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+      </div>
+      <div class="w3-col l3 m6">
+        <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+      </div>
+      <div class="w3-col l3 m6">
+        <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+      </div>
+      <div class="w3-col l3 m6">
+        <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+      </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav pull-right logo2">
-        <li><a href="#">Home</a></li>
-        <li><a href="#installationSection">Experience</a></li>
-				<li><a href="#maintenanceSection">The Hike</a></li>
-        <li><a href="#tips">Tips</a></li>
-        <li><a href="#faq">FAQ<a/></li>
-        <li><a href="#contactSection">Contact me</a></li>
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col l3 m6">
+        <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+      </div>
+      <div class="w3-col l3 m6">
+        <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+      </div>
+      <div class="w3-col l3 m6">
+        <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+      </div>
+      <div class="w3-col l3 m6">
+        <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+      </div>
+    </div>
+  </div>
 
-      </ul>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
 
-
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-    <!-- body site code here -->
-
-<div class="jumbotron hero">
-  <div class="container text-center hero-text">
-		<img class="img-responsive centered logoRounded" width="15%" src="img/lake.jpg" alt="The logo of american light goes here">
-  	<h2>TRAVEL</h2>
-		<h3>Experiece the best Yosemite has to offer</h3>
-  <!-- <p>Testing jumbotron</p> -->
-	<p><a class="btn btn-primary btn-lg" href="#contactSection" role="button">See available dates!!</a></p>
-
-	</div>
-</div>
-
-<div class="container" id="serviceSection">
-		<h1 class="text-center title-font">Experience</b></h1>
-	<div class="row">
-		<div class="left-side col-md-6">
-			<img class="img-responsive rounded" src="img/yosemite-1.jpg" alt="product, fusebox image">
-		</div>
-		<div class="right-side col-md-6" id="installationSection">
-			<h3><b>Installation</b></h3>
-			<ul><b>
-				<li>We specialize in Business and residential work</li>
-				<li>Roof top Solar panel</li>
-				<li>Car port solar panel</li>
-				<li>Advanced Electrical Work</li>
-				<li>Specialty Electrical Work</li>
-				<li>Ground Mounts</li>
-				<li>Underground Electical Work</li>
-				<li>Ground Trenching and Electical piping</li>
-				<li>General Home Electical</li>
-				<li>And much more.....</li>
-			</b>
-			</ul>
-			<p><b>Whether you are looking for residential solar or business solar soultions, we can do it. We have over 10 years experience in the field of solar power. Trust New Age Energy to help you find the solution to your solar needs.</b></p>
-			<a class="btn btn-primary btn-md" href="#contactSection">See availale dates now</a>
-		</div>
-	</div>
-	<div class="row rowMarginTop" id="maintenanceSection">
-		<div class= "right-side col-md-6">
-			<!--b tag is for bold  -->
-			<h3><b>Maintenance</b></h3>
-			<ul>
-				<b>
-				<li>Broken Solar Panel Replacement</li>
-				<li>Solar Panel Cleaning and Wash</li>
-				<li>Upgrade existing Solor Panels</li>
-				<li>Existing Electrical Panel Upgrade and Service</li>
-				<li>Electical Wiring Upgrade</li>
-				<li>Critter Guard Protection</li>
-				<li>General trouble shooting and diagnostic</li>
-				<li>Safety Inspection</li>
-			</b>
-		</ul>
-		<p><b>Need maintenance or have questions about your existing solar panels? Are pesky unwanted critters using your panels for shelter? Worry not, here at New Age Energy we offer solutions to all your solar needs. Whether its installation of critter guards, cleaning of panels, replacements, or troubleshooting. We do it all, give us a call.</b></p>
-			<a class="btn btn-primary btn-md" href="#contactSection">Ask us about Maintenance now</a>
-		</div>
-		<div class= "right-side col-md-6">
-			<img class="img-responsive rounded"src="img/worker-lq.jpg" alt="service image, worker">
-		</div>
-	</div>
-</div>
-
-<div class="adoption-section">
-	<div class="container text-center">
-		<div class="row rowMarginTop card">
-			<div class="left-side col-md-4 ">
-				<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"</span>
-				<h3><b>WHY SOLAR with NEW AGE ENERGY</b></h3>
-				<p>Solar is the smart option. Solar power eliminate or drastically reduce your electric bill. They will add to your home's resale value. NEW AGE ENERGY is the easy decision, it is the SMART decision.</p>
-				<p>.</p>
-				<a class="btn btn-primary btn-lg" href="#contactSection">SMART</a>
-			</div>
-			<div class="col-md-4 ">
-				<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"</span>
-				<h3><b>SOLAR ENERGY IS FREE</b></h3>
-				<p>Free, who doesn't love free energy. NEW AGE ENERGY will help harnest the suns energy to power your home. Don't worry, the sun will never send you an energy bill, how about that. </p>
-				<p> .</p>
-				<a class="btn btn-primary btn-lg" href="#contactSection">SAVE</a>
-			</div>
-			<div class="col-md-4">
-				<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"</span>
-				<h3><b>NEW AGE ENERGY makes SOLAR SIMPLE!</b></h3>
-				<p>We help you from start to finish and through out the lifespan of your system. From the initial design to a Solar Energy System specifically optimized for your home, to the install, to permits, to the maintenance years after the install, New Age Solar will be there for you.</p>
-				<a class="btn btn-primary btn-lg" href="#contactSection">SIMPLE</a>
-			</div>
-		</div>
-		<div class="row rowMarginTop">
-				<div class="col-lg-push-2 col-lg-8 card">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/csLE9WOtbVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!-- Skills Section -->
+  <div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>Our Skills.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+        tempor incididunt ut labore et dolore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+        tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-col m6">
+        <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
         </div>
-			</div>
-		</div>
-</div>
-<!-- <div class="container"> -->
-	<!-- <div class="row rowMarginTop"> -->
+        <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- </div> -->
+  <!-- Pricing Section -->
+  <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+    <h3>PRICING</h3>
+    <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16"><b>10GB</b> Storage</li>
+          <li class="w3-padding-16"><b>10</b> Emails</li>
+          <li class="w3-padding-16"><b>10</b> Domains</li>
+          <li class="w3-padding-16"><b>Endless</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-third">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+          <li class="w3-padding-16"><b>25GB</b> Storage</li>
+          <li class="w3-padding-16"><b>25</b> Emails</li>
+          <li class="w3-padding-16"><b>25</b> Domains</li>
+          <li class="w3-padding-16"><b>Endless</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+          <li class="w3-padding-16"><b>50GB</b> Storage</li>
+          <li class="w3-padding-16"><b>50</b> Emails</li>
+          <li class="w3-padding-16"><b>50</b> Domains</li>
+          <li class="w3-padding-16"><b>Endless</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$ 50</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+    <div style="margin-top:48px">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Fresno California, US</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 5599420358</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: kevi123321@mail.com</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+      <!-- Image of location/map -->
+      <img src="/img/tunnel.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by dev <a href="https://kevi123.github.io" title="Kevin Hinojosa Web Developer" target="_blank" class="w3-hover-text-green">Kevin Hinojosa</a></p>
+  </footer>
 
 
-<div class="container">
-	<div class="row rowMarginTop">
-		<div class="col-lg-4 card">
-			<a href="https://www.latimes.com/business/la-fi-solar-power-new-homes-20181206-story.html"><h3>Yosemite news article 1 here..</h3><img class="rounded15" width="100%" src="img/la-times-solar.png" alt="news story article"></a>
-		</div>
 
-		<div class="col-lg-4 card">
-			<a href="https://www.fresnobee.com/news/local/article213185509.html">
-				<h3>Yosemite news article here</h3><img class="rounded15" width="100%" src="img/fresno-bee-solar.png" alt="news story article">
-			</a>
-		</div>
+  </body>
+  </html>
 
-		<div class="col-lg-4 card">
-			<a href="https://www.latimes.com/business/la-fi-solar-power-new-homes-20181206-story.html">
-				<h3>California officially becomes first state to require solar panels on new homes</h3><img class="rounded15" width="100%" src="img/la-times-solar.png" alt="news story article">
-			</a>
+	 <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script> <!--mine-->
+	 <script src="js/bootstrap.min.js" charset="utf-8"></script> <>
 
-		</div>
-	</div>
-</div>
-
-
-
-<div class="container">
-	<!-- Go to google maps, share and embed map, copy code -->
-	<div class="row">
-		<h2 class="text-center title-font">Our Route from Fresno to Yosemite</h2>
-		<div class="col-lg-push-2 col-lg-8">
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d159409.10073721025!2d-120.55442279164765!3d35.81683868080584!2m3!1f0.6492335437328253!2f45!3f0!3m2!1i1024!2i768!4f35!4m13!3e6!4m5!1s0x80945de1549e4e9d%3A0x7b12406449a3b811!2sFresno%2C+California!3m2!1d36.7377981!2d-119.78712469999999!4m5!1s0x8096f2018c5c3b59%3A0x5dfe944f289d8ecc!2sYosemite+Village%2C+Yosemite+Valley%2C+CA+95389!3m2!1d37.7466583!2d-119.5905021!5e1!3m2!1sen!2sus!4v1562813662290!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-		</div>
-	</div>
-</div>
-
-
-
-<footer class="footer-section" id="contactSection">
-	<div class="container">
-		<div class="row rowMarginTop text-center">
-
-			<div class="col-md-4 col-lg-4">
-				<img class="img-responsive centered logoRounded" width="15%" src="img/lake.jpg" alt="The logo of american light goes here">
-
-						<p>Yosemite Travel.</p>
-						<p>Fresno County</p>
-						<p>Kevin Hinojosa</p>
-						<a href="tel:5599420358"><p>(559)942-0358</p></a>
-						<a href="mailto:kevi123321@gmail.com"><p>kevi123321@gmail.com</p></a>
-
-			</div>
-
-			<div class="col-md-4"> <!--col-md-push-4-->
-				<p >FOLLOW US ON SOCIAL MEDIA</p>
-				<i class="fab fa-linkedin-in"></i>
-				<i class="fab fa-facebook-f"></i>
-				<i class="fab fa-twitter"></i>
-			</div>
-
-
-		<div class="col-md-4 col-lg-4 " >
-			<p>License #1022592</p>
-			<p>License #719857</p>
-			<p>CPR Certified</p>
-			<p>First Aid Wilderness Certification</p>
-			<p>Leave No Trace Ethics</p>
-		</div>
-	</div>
-	<div class="text-center"style="background-color:#101010">
-		<p> © 2019 Yosemite Travels.| Website by <a href="https://kevi123.github.io/#">Kevin Hinojosa</a></p>
-	</div>
-</footer>
-
-
-    <!-- link all the scripts here -->
-		<script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
-		<script src="js/bootstrap.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
