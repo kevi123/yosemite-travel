@@ -52,7 +52,7 @@ body{
 
 .supplies{
   opacity: 1;
-  background-image: url("../img/supplies.jpg");
+  background-image: url("../img/july/27.jpg");
   background-size: 100% 100%;
   background-color: lightgreen;
   text-align: center;
@@ -86,6 +86,10 @@ body{
 /* This makes the images round, lower makes img bigger */
 .pop{
   box-shadow:5px 7px 5px #000;/*gives cards sense of depth*/ */
+}
+
+.outline{
+  text-shadow: 0px 0px 6px #000000;
 }
 
 .rounded{
