@@ -58,6 +58,16 @@ body{
   text-align: center;
 }
 
+.river{
+  opacity: 1;
+  background-image: url("../img/july/12.jpg");
+  background-size: 100% 100%;
+  background-color: lightgreen;
+  text-align: center;
+  text-shadow: 0px 0px 6px #ff000000;
+}
+
+
 .lake{
   opacity: 1;
   background-image: url("../img/lake.jpg");
@@ -74,6 +84,15 @@ body{
   background-color: white;
   text-align: center;
   text-shadow: 0px 0px 6px #ff000000;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+
 }
 
 .noBullets{
